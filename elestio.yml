@@ -6,6 +6,8 @@ config:
   buildDir: "dist"
   runCommand: "yarn start"
   installCommand: "yarn install"
+  icon: "src/assests/umijs.png"
+  screenshot: "src/assests/screenshot.png"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -25,3 +27,6 @@ exposedPorts:
 environments:
   - key: "ENV"
     value: "production"
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"    
